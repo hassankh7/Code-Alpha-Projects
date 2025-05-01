@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallary</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+    <div class="gallery">
+      <img src="Codin.jpg" alt="Image1" onclick="openModal(0)">
+      <img src="danial-igdery-FCHlYvR5gJI-unsplash.jpg" alt="Image 2" onclick="openModal(1)">
+      <img src="software.jpg" alt="Image3" onclick="openModal(2)">
+      <img src="Keep calm and work.jpg" alt="Image4" onclick="openModal(3)">
+      <img src="fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" alt="Image5" onclick="openModal(4)">
+      <img src="christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Image6" onclick="openModal(5)">
+    </div>
+  
+    <!-- Buttons or images  -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" src="">
+        <div class="navigation">
+          <button onclick="changeImage(-1)">Previous</button>
+          <button onclick="changeImage(1)">Next</button>
+        </div>
+      </div>
+  <h6>Created by HASSAN KHAN</h6>
+  
+    <script src="script.js"></script>
+
+</div>
+       
+</body>
+</html>

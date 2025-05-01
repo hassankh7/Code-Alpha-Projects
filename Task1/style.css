@@ -1,0 +1,90 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding-top: 60px;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+#modal img {
+  width: 400px;
+  height: auto;
+  border: 4px solid white;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#preview {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#preview img {
+  width: 400px;
+  height: auto;
+}
+h6{
+  color: grey;
+}
