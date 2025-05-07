@@ -1,0 +1,158 @@
+
+
+  /* Reset & base */
+  *{
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Container */
+  #player {
+    background: rgba(0,0,0,0.6);
+    width: 320px;
+    max-width: 95vw;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+ /* Song image */
+ #cover {
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+  }
+ /* Song info */
+ #title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  #artist {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+  /* Controls container */
+  #controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+  
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  }
+/* Control buttons */
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 1.6rem;
+  user-select: none;
+}
+button:focus {
+  outline: none;
+  color: #f39c12;
+}
+button:hover {
+  color: #f39c12;
+}
+/* Bigger play/pause button */
+#play {
+  font-size: 2.4rem;
+}
+/* Progress bar container */
+#progress-container {
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 10px;
+}
+/* Progress bar */
+#progress {
+    background: #f39c12;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+  }
+  /* Time container */
+  #time-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #eee;
+    font-variant-numeric: tabular-nums;
+    user-select: none;
+  }
+   /* Footer with created by text */
+
+  
+  footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+/* Responsive adjustments for smaller mobile screens */
+@media (max-width: 400px) {
+  #player {
+    width: 95vw;
+    padding: 15px;
+  }
+  #cover {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+  #title {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+  #artist {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  #controls {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  #play {
+    font-size: 2rem;
+  }
+  #time-container {
+    margin-bottom: 8px;
+  }
+  #footer {
+    font-size: 0.7rem;
+    margin-top: 6px;
+  }
+}
+ 
