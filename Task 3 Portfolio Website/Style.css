@@ -1,0 +1,291 @@
+
+/* Allah Ke NAme Se shuru */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(6, 6, 92);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 23px;
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color:  rgb(109, 188, 241);
+    font-size: 1.1em;
+}
+.left:hover{
+    color:  rgb(109, 188, 241);
+}
+
+
+.left{
+    font-size: 2rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    /* Is Ko Main margin donga to mera taxt nav se neche ajaie ga jo mujhe chaiye  */
+    margin: 90px 0px;
+    margin-top: 50px;
+    height: 100vh;
+}
+/* ">" ye sign laganie se jo first wala div hoga sirf wo target hoga os per width:30% Person
+apply hojaie gaie */
+.firstsection > div{
+    width: 30%;
+    margin-top: 150px;
+}
+.leftsection{
+    font-size: 3rem;
+}
+.Rightsection{
+    width: 80%;
+    margin: 0px 25px;
+}
+/* Ab Main apne Name ka color change karonga mene span dala os ko class die de blue */
+.blue{
+    color: rgb(109, 188, 241);
+}
+.Rightsection img{
+    height: 50vh;
+    width: 100%;
+}
+
+#element{
+    color: rgb(109, 188, 241);
+}
+
+.secondsection{
+    max-width: 80vw;
+    margin:auto;
+    height: 50vh;
+}
+
+.secondsection h1{
+    font-size: 2rem;
+    color: rgb(109, 188, 241);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.aboutme p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+/* --- New Sections Styling (Projects, Services, Contact) --- */
+.projects, .services, .contact {
+    max-width: 80vw;
+    margin: 100px auto;
+    height: 50vh;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.projects h1, .services h1, .contact h1 {
+    font-size: 2rem;
+    color: rgb(109, 188, 241);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.projects p, .services p, .contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Calculator Icon Color */
+.services i {
+    color: yellow;
+    margin-left: 10px;
+}
+
+ /* Contact Form Styling */
+#contact{
+    background-color: #0d0d1a;
+  }
+
+.contact-form{
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1a1a2e;
+    border: 3px solid rgba(86, 88, 72, 0.788);
+    padding: 30px;
+    border-radius: 15px;
+  }
+.contact-form h2{
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+.contact-form .row{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ccc;
+    font-size: 16px;
+  }
+
+.contact-form textarea{
+    height: 150px;
+    
+  }
+
+.contact-form button{
+    margin-top: 15px;
+    background: yellow;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+.contact-form button:hover {
+    background: hotpink;
+}
+
+/* Floating Animation for Image */
+.floating-img {
+    width: 50vh;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  /* Media Queries */
+@media (max-width: 768px) {
+  .contact-form .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form h2 {
+    font-size: 22px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .floating-img {
+    width: 70px;
+    right: 10px;
+  }
+}
+.contact-form {
+    /* ... */
+    overflow: hidden; /* 👈 Isko hata do ya auto karo */
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* For Tablets and Below (≤ 768px) */
+@media (max-width: 768px) {
+    .firstsection > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .leftsection {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Contact Form Responsive */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form .row {
+        flex-direction: column;
+    }
+
+    .contact-form input {
+        margin-bottom: 10px;
+    }
+}
+
+/* For Mobiles and Small Devices (≤ 480px) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .Rightsection img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Contact Form - mobile fix */
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+

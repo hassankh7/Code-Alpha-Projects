@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Potfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <div class="left">Hassan Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi My Name Is <span class="blue"> Hassan </span>
+                <div>I Am A Software Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="Rightsection">
+                <!-- <img src="PngItem_1127587.png"alt=""> -->
+            </div>
+        </section>
+    </main>
+    
+    <section class="secondsection" id="about">
+        <h1>About Me</h1>
+        <p>I Am Student OF Governor IT Initative  with a strong foundation in front-end 
+            technologies like HTML, CSS, and JavaScript. I am currently learning advanced
+            frameworks like Next.js and Tailwind CSS to enhance my skills.InshahAllah
+            contribute to projects that solve real-world problems through innovative solutions.
+            Looking for new challenges to improve my skills.</p>
+        </section></p>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <p>1. Portfolio Website<br>
+            2. Image Gallery<br>
+            3. Calculator <br>
+            4. Weather App <br>
+            5. Unit Converter<br>
+            6. Password Strength Checker
+        </p>
+    </section>
+    
+    <section class="services" id="services">
+        <h1>Services <i class="fas fa-calculator"></i></h1>
+        <p>I provide services in Web Design, Frontend Development, Graphic Designing, and Video Editing.</p>
+    </section>
+    
+    <!-- CONTACT FORM -->
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <div class="row">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Father Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Phone no">
+                <input type="email" placeholder="Email">
+            </div>
+            <textarea placeholder="Description"></textarea>
+            <button>Send Message</button>
+            
+            <img src="PngItem_1127587.png" alt="Floating Image" class="floating-img">
+        </div> 
+    </section> 
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Grapics Designer' , 'Video Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
+
+      <script src="script.js"></script>
+</body>
+</html>
